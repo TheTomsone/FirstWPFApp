@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FirstWPFApp"
         mc:Ignorable="d"
+        Background="#0A0A0A"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
         Title="MainWindow" Width="1280" Height="720" >
@@ -20,6 +21,15 @@
             <ColumnDefinition Width="200"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Label Grid.Column="1" FontSize="25">MyFirstApp</Label>
+        <Label Grid.Column="1" FontSize="25" Foreground="White" VerticalAlignment="Center">MyFirstApp</Label>
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" Width="200">
+            <Button Background="Transparent" BorderBrush="Transparent" Foreground="White" Margin="0 20">Home</Button>
+            <Button Background="Transparent" BorderBrush="Transparent" Foreground="White" Margin="0 20">Home</Button>
+            <Button Background="Transparent" BorderBrush="Transparent" Foreground="White" Margin="0 20">Home</Button>
+            <Button Background="Transparent" BorderBrush="Transparent" Foreground="White" Margin="0 20">Home</Button>
+            <Button Background="Transparent" BorderBrush="Transparent" Foreground="White" Margin="0 20">Home</Button>
+            <Button Background="Transparent" BorderBrush="Transparent" Foreground="White" Margin="0 20">Home</Button>
+            <Button Background="Transparent" BorderBrush="Transparent" Foreground="White" Margin="0 20">Gestion base de donnée</Button>
+        </StackPanel>
     </Grid>
 </Window>
