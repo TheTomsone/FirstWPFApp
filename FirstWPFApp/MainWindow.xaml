@@ -5,31 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FirstWPFApp"
         mc:Ignorable="d"
-        Background="#0A0A0A"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
-        Title="MainWindow" Width="1280" Height="720" >
-        <!-- WindowState="Maximized"
-             WindowStyle="None"-->
-    <Grid Margin="10">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="500"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        <Label Grid.Column="1" FontSize="25" Foreground="White" VerticalAlignment="Center">MyFirstApp</Label>
-        <StackPanel Grid.Row="1" HorizontalAlignment="Center" Width="200">
-            <Button Background="Transparent" BorderBrush="Transparent" Foreground="White" Margin="0 20">Home</Button>
-            <Button Background="Transparent" BorderBrush="Transparent" Foreground="White" Margin="0 20">Home</Button>
-            <Button Background="Transparent" BorderBrush="Transparent" Foreground="White" Margin="0 20">Home</Button>
-            <Button Background="Transparent" BorderBrush="Transparent" Foreground="White" Margin="0 20">Home</Button>
-            <Button Background="Transparent" BorderBrush="Transparent" Foreground="White" Margin="0 20">Home</Button>
-            <Button Background="Transparent" BorderBrush="Transparent" Foreground="White" Margin="0 20">Home</Button>
-            <Button Background="Transparent" BorderBrush="Transparent" Foreground="White" Margin="0 20">Gestion base de donnée</Button>
-        </StackPanel>
-    </Grid>
+        Title="MainWindow" Width="1280" Height="720"
+        AllowsTransparency="True"
+        Background="Transparent"
+        WindowStyle="None"
+        WindowState="Maximized">
+        <Border CornerRadius="5" Background="#0A0A0A" BorderThickness="0.3">
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="500"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+            <Ellipse Grid.Column="1" Fill="Red" Height="20" Width="20" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,20,20,0" MouseLeftButtonUp="CloseApp"></Ellipse>
+            <Ellipse Grid.Column="1" Fill="Yellow" Height="20" Width="20" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,20,50,0" MouseLeftButtonUp="MinimizeApp"></Ellipse>
+            <Label Grid.Column="1" FontSize="25" Foreground="White" VerticalAlignment="Center">MyFirstApp</Label>
+                <StackPanel Grid.Row="1" HorizontalAlignment="Center" Width="200">
+                    <Button Background="Transparent" BorderBrush="Transparent" Foreground="White" Margin="0 20">Home</Button>
+                    <Button Background="Transparent" BorderBrush="Transparent" Foreground="White" Margin="0 20">Home</Button>
+                    <Button Background="Transparent" BorderBrush="Transparent" Foreground="White" Margin="0 20">Home</Button>
+                    <Button Background="Transparent" BorderBrush="Transparent" Foreground="White" Margin="0 20">Home</Button>
+                    <Button Background="Transparent" BorderBrush="Transparent" Foreground="White" Margin="0 20">Home</Button>
+                    <Button Background="Transparent" BorderBrush="Transparent" Foreground="White" Margin="0 20">Home</Button>
+                    <Button Background="Transparent" BorderBrush="Transparent" Foreground="White" Margin="0 20">Gestion base de donnée</Button>
+                </StackPanel>
+            </Grid>
+        </Border>
 </Window>
